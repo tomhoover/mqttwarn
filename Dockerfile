@@ -21,7 +21,7 @@ VOLUME ["/opt/mqttwarn/conf"]
 
 # set conf path
 ENV MQTTWARNINI="/opt/mqttwarn/conf/mqttwarn.ini"
-ENV MQTTWARNLOG="/opt/mqttwarn/conf/mqttwarn.log'
+ENV MQTTWARNLOG="/opt/mqttwarn/conf/mqttwarn.log"
 
 # finally, copy the current code (ideally we'd copy only what we need, but it
 #  is not clear what that is, yet)
