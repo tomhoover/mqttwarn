@@ -21,7 +21,7 @@ protocol     = 3
 
 ; logging
 logformat = '%(asctime)-15s %(levelname)-5s [%(module)s] %(message)s'
-logfile   = '/opt/mqttwarn/conf/mqttwarn.log'
+logfile   = 'mqttwarn.log'
 
 ; one of: CRITICAL, DEBUG, ERROR, INFO, WARN
 loglevel  = DEBUG
