@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+import shutil  
 import paho.mqtt.client as paho   # pip install paho-mqtt
 import imp
 import logging
@@ -337,6 +338,7 @@ try:
     cf = Config(CONFIGFILE)
 except Exception, e:
     print "Cannot open configuration at %s: %s" % (CONFIGFILE, str(e))
+    shutil.copyfile('mqttwarn.ini.sample', 'conf/mqttwarn.ini.sample')
     sys.exit(2)
 
 LOGLEVEL  = cf.loglevelnumber
